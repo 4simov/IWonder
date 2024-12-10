@@ -1,0 +1,79 @@
+.background-image-contact {
+  max-width: 100%;
+  display: flex;
+  min-width: auto;
+  border-bottom: 1px solid black;
+}
+
+/* Form Container */
+.form-container {
+  padding: 40px;
+  width: 35%;
+  text-align: center;
+  background-color: #E9DBC4;
+  max-width: 50%;
+}
+
+.logo-container{
+  width: 65%;
+}
+
+.form-container h1 {
+  font-family: 'Spectral SC', serif;
+  font-size: 24px;
+  color: #4F1823;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.form-group {
+  width: 100%;
+  text-align: left;
+}
+
+#message {
+  max-width: 0px;
+  height: auto;
+  max-height: max-content;
+}
+
+.form-group textarea {
+  width: 100%;
+  max-width: 0px;
+  min-width: 0px;
+  height: auto;
+}
+
+.form-group label {
+  font-family: 'Spectral SC', serif;
+  font-size: 18px;
+  color: #4F1823;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  max-width: 50%;
+  min-width: 100%;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #4F1823;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background: transparent;
+}
+
+input:focus {
+  outline: none;
+}

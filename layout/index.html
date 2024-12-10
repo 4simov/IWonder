@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NégoSud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+    <!-- Pop Up confirmation Age -->
+    <div id="age-popup" class="popup">
+        <div class="popup-content">
+            <h2>Confirmez votre âge</h2>
+            <p>Vous devez avoir 18 ans ou plus pour accéder à ce site.</p>
+            <button id="confirm-age">J'ai 18 ans ou plus</button>
+            <button id="deny-age">Je n'ai pas 18 ans</button>
+        </div>
+    </div>
+
+    <div class="background">
+        <!-- header -->
+        <div id="header-container"></div>
+        <main class="main">
+            <!-- Partie Famille de vin -->
+            <section class="hero">
+                <img src="images/Frame 8.svg" alt="Hero Image">
+            </section>
+            <section class="featured-products">
+                <h2>Nos différentes familles de vin</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="images/une_bouteille_de_vin_blanc_sur_un_fond_neutre-removebg-preview 2 (1).png" alt="Product 1">
+                        <p class="product-type">Vin Blanc</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/Rose.png" alt="Product 2">
+                        <p class="product-type">Vin Rose</p>
+                    </div>
+                    <div class="product">
+                        <img src="images/Rouge.png" alt="Product 3">
+                        <p class="product-type">Vin Rouge</p>
+                    </div>
+                </div>
+                <a href="catalogue.html" class="btn-primary">Voir plus</a>
+            </section>
+
+            <!-- Partie Suggestion -->
+            <section class="suggestion-products">
+                <h2>Nos suggestions du mois</h2>
+                <div id="suggestions-container" class="suggestions">
+                    <!-- Les suggestions dynamiques seront insérées ici -->
+                </div>
+            </section>
+
+        </main>
+        <!-- Footer -->
+        <div id="footer-container">
+        </div>
+</body>
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const popup = document.getElementById("age-popup");
+        const confirmBtn = document.getElementById("confirm-age");
+        const denyBtn = document.getElementById("deny-age");
+
+        // Affiche la pop-up au chargement
+        popup.classList.add("show");
+        confirmBtn.addEventListener("click", function () {
+            popup.classList.remove("show");
+        });
+        denyBtn.addEventListener("click", function () {
+            alert("Vous devez avoir 18 ans pour accéder au site.");
+
+        });
+    });
+
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+        });
+
+
+    // Prends les données depuis le fichier JSON
+    fetch("vins.json")
+        .then((response) => response.json()) // Convertir la réponse en JSON
+        .then((vins) => {
+            const suggestionsContainer = document.getElementById("suggestions-container");
+
+            //Maximum 4 suggestions
+            vins.slice(0, 4).forEach((vin) => {
+                suggestionsContainer.innerHTML += `
+          <div class="suggestion">
+            <img src="${vin.image}" alt="${vin.nom}">
+            <p class="suggestion-type">${vin.nom}</p>
+            <p class="suggestion-type-prix">Prix : ${vin.prix}€</p>
+            <a href="produit.html" class="btn-primary">Voir la fiche</a>
+          </div>
+        `;
+            });
+        })
+        .catch((error) => console.error("Erreur de chargement des données :", error));
+</script>

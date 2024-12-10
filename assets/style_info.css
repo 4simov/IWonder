@@ -1,0 +1,16 @@
+.conditions-vente h1{
+    margin : 0;
+    text-align: center;
+}
+
+.conditions-vente h1,
+.conditions-vente h2,
+.conditions-vente p{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.conditions-vente p{
+    text-align: justify;
+}

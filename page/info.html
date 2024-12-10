@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NégoSud</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_info.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="background">
+    <!-- header -->
+    <div id="header-container"></div>
+    <class main="informations-legales">
+      <section class="conditions-vente">
+        <h1>Conditions générales</h1>
+        <h2>Conditions générales de vente</h2>
+        <p> Nitwits bully mountebanks abecedarians pockmarks ectoplasmic byproduct nyctalops profiteers blackamoor
+          blackbird beasts picaroons balkan beetle carpet-sellers torturers. Olympic athlete bully woodlice shipwreckers
+          corsair paranoiac monopolizers moujiks freshwater swabs patagonians numbskulls. Torturers picaroons tramps
+          pockmarks
+          artichokes visigoths cercopithecus gang of thieves. Bagpipers gang of thieves bougainvillea parasites black
+          marketeers
+          guano gatherer buccaneer nincompoop ophicleides pyrographers. Parasites turncoats cro-magnon logarithm
+          goosecaps
+          wreckers
+          murderers vegetarian liquorice guano gatherer dogs shipwreckers two-timing tartar twisters vagabonds.
+          Pockmarks
+          mameluke
+          shipwreckers terrapins dogs moujiks sea gherkins. Cro-magnon anthracite vermicellis tramps baboon filibusters
+          vagabonds
+          aztecs ectoplasm. Bandit beasts vampires balkan beetle harlequin gang of thieves olympic athlete ruffian
+          macrocephalic
+          baboon duck-billed platypus.
+
+          Rhizopods hydrocarbon nitwits crab apples egoists profiteers nitwits traitors filibusters vampires pirates.
+          Squawking popinjay
+          monopolizers odd-toed ungulate nitwits troglodytes steamrollers bully ostrogoth paranoiac coelacanth parasites
+          fat faces.
+          Ruffian parasites sea-lice ectoplasm profiteers breathalyser politician traitors. Orangoutang ophicleides
+          coelacanth harlequin
+          olympic athlete parasites gyroscope fancy-dress freebooters. Pockmarks villain jellied eel polynesian
+          toffee-noses moujiks
+          blackbird. Anthropophagus savages toads squawking popinjay patagonians politician artichokes. Blackguards
+          gibbering ghost
+          zapotecs parasites blackguards. Hydrocarbon cro-magnon hooligans filibusters road hogs diplodocus sycophant
+          slave trader
+          scoffing braggart.</p>
+        <h2>Traitement des données personnelles</h2>
+        <p>Zapotecs zapotecs sea gherkins rats lily-livered bandicoots. Fat faces bashi-bazouks vampires scoffing
+          braggart
+          slubberdegullions.
+          Diplodocus traitors swine bootlegger aztecs polynesian brutes patagonians centipede abecedarians cowards
+          olympic
+          athlete
+          iconoclast. Crab apples troglodytes pirates vulture torturers traitors black-beetles murderers highwayman
+          cannibal rhizopods
+          bashi-bazouks fancy-dress freebooters toads. Prattling porpoise prattling porpoise gang of thieves
+          body-snatcher
+          bashi-bazouks
+          kleptomaniacs odd-toed ungulate brigand body-snatcher hydrocarbon ophicleides wreckers. Hooligans
+          anthropophagus
+          bully technocrat
+          blackamoor pithecanthropuses monopolizers gangsters gibbering ghost. Swine pyrographers fancy-dress
+          freebooters
+          steamrollers
+          squawking popinjay rats numbskulls crooks moujiks politician bashi-bazouks aborigine aborigine dipsomaniac.
+          Sea
+          gherkins road
+          hogs paranoiac traitors patagonians rhizopods logarithm.</p>
+      </section>
+      </main>
+    </class>
+    <!-- Footer -->
+    <div id="footer-container">
+    </div>
+</body>
+
+</html>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-container').innerHTML = data;
+    });
+</script>

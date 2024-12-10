@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NegoSud</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_fiche_produit.css" />
+    <link rel="stylesheet" href="style_catalogue.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="background">
+      <!-- header -->
+      <div id="header-container"></div>
+      <main class="main">
+        <!-- Partie Produits -->
+        <section class="all-products">
+          <div class="bandeau-titre">
+            <h2>Nos vins</h2>
+          </div>
+          <div id="products-container" class="products">
+            <!-- Les produits dynamiques seront insérées ici -->
+          </div>
+        </section>
+      </main>
+      <!-- Footer -->
+      <div id="footer-container"></div>
+    </div>
+  </body>
+</html>
+
+<script>
+  fetch("footer.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("footer-container").innerHTML = data;
+    });
+
+  fetch("header.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("header-container").innerHTML = data;
+    });
+  // Prends les données depuis le fichier JSON
+  fetch("vins.json")
+    .then((response) => response.json()) // Convertir la réponse en JSON
+    .then((vins) => {
+      const suggestionsContainer = document.getElementById(
+        "products-container"
+      );
+
+      //Maximum 4 suggestions
+      vins.slice(0, 12).forEach((vin) => {
+        suggestionsContainer.innerHTML += `
+          <div class="suggestion">
+            <img src="${vin.image}" alt="${vin.nom}">
+            <p class="suggestion-type">${vin.nom}</p>
+            <p class="suggestion-type-prix">Prix : ${vin.prix}€</p>
+            <a href="produit.html" class="btn-primary">Voir la fiche</a>
+          </div>
+        `;
+      });
+    })
+    .catch((error) =>
+      console.error("Erreur de chargement des données :", error)
+    );
+</script>
