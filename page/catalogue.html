@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NegoSud</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style_fiche_produit.css" />
-    <link rel="stylesheet" href="style_catalogue.css" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/style_catalogue.css" />
+    <link rel="stylesheet" href="../assets/style_connexion.css" />
+    <link rel="stylesheet" href="../assets/style_fiche_produit.css" />
+    <link rel="stylesheet" href="../assets/style_contact.css" />
+    <link rel="stylesheet" href="../assets/style_info.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -63,7 +66,7 @@
             <img src="${vin.image}" alt="${vin.nom}">
             <p class="suggestion-type">${vin.nom}</p>
             <p class="suggestion-type-prix">Prix : ${vin.prix}€</p>
-            <a href="produit.html" class="btn-primary">Voir la fiche</a>
+            <a href="../page/produit.html" class="btn-primary">Voir la fiche</a>
           </div>
         `;
       });
