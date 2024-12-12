@@ -5,7 +5,7 @@
       "quantité": 12,
       "prix": 250,
       "description": "Un vin rouge prestigieux avec des arémes complexes de fruits rouges et de chéne.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     },
     {
       "nom": "Domaine de Chevalier",
@@ -13,7 +13,7 @@
       "quantité": 8,
       "prix": 90,
       "description": "Un vin blanc élégant avec des notes de citron, de péche et une belle minéralité.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     },
     {
       "nom": "Rosé de Provence",
@@ -21,7 +21,7 @@
       "quantité": 20,
       "prix": 15,
       "description": "Un rosé léger et rafraéchissant avec des arémes de fraise et de melon.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     },
     {
       "nom": "Clos de Vougeot",
@@ -29,7 +29,7 @@
       "quantité": 5,
       "prix": 300,
       "description": "Un grand cru mythique de Bourgogne avec des saveurs intenses et complexes.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     },
     {
       "nom": "Chablis Premier Cru",
@@ -37,7 +37,7 @@
       "quantité": 10,
       "prix": 50,
       "description": "Un vin blanc sec avec une acidité vibrante et des notes de pomme verte et de citron.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     },
     {
       "nom": "Cétes de Provence",
@@ -45,7 +45,7 @@
       "quantité": 15,
       "prix": 18,
       "description": "Un vin rosé frais et fruité idéal pour les journées d'été.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     },
     {
       "nom": "Saint-émilion Grand Cru",
@@ -53,7 +53,7 @@
       "quantité": 7,
       "prix": 120,
       "description": "Un vin rouge rond et équilibré, avec des notes de fruits noirs et une touche d'épices.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     },
     {
       "nom": "Sancerre Blanc",
@@ -61,7 +61,7 @@
       "quantité": 6,
       "prix": 35,
       "description": "Un vin blanc rafraéchissant avec des arémes de pamplemousse, de fleurs blanches et de minéraux.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     },
     {
       "nom": "Tavel",
@@ -69,7 +69,7 @@
       "quantité": 25,
       "prix": 22,
       "description": "Un rosé structuré et puissant avec des arémes de fruits rouges mérs.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     },
     {
       "nom": "Chéteauneuf-du-Pape",
@@ -77,7 +77,7 @@
       "quantité": 4,
       "prix": 75,
       "description": "Un vin rouge riche et complexe avec des arémes de fruits noirs, de poivre et de garrigue.",
-      "image": "images/Rose.png"
+      "image": "../images/Rose.png"
     }
   ]
   
