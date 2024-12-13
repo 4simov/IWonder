@@ -1,0 +1,27 @@
+<div class="bandeau-titre">
+  <h2>Mon compte</h2>
+</div>
+<div class="container-connexion-creation">
+  <form action="connexion.php" method="post" class="connexion">
+    <h3>Connexion</h3>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" name="password" required />
+    <button type="submit" class="btn-primary">Se connecter</button>
+    <a routerLink="/">
+      <p>Mot de passe oublié ?</p>
+    </a>
+  </form>
+  <div class="back"></div>
+  <form action="creation_compte.php" method="post" class="creation">
+    <h3>Création de compte</h3>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" name="password" required />
+    <label for="password">Confirmer le mot de passe</label>
+    <input type="password" id="password" name="password" required />
+    <button type="submit" class="btn-primary">Créer un compte</button>
+  </form>
+</div>

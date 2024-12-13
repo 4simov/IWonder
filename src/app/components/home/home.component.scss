@@ -1,0 +1,96 @@
+.hero {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+/* Partie Suggestions et Famille de vins */
+.featured-products {
+  text-align: center;
+  padding: 20px;
+}
+
+.suggestion-products {
+  text-align: center;
+  padding: 20px;
+}
+
+.featured-products h2 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.suggestion-products h2 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.products {
+  display: flex;
+  gap: 53px;
+  justify-content: center;
+}
+
+.suggestions {
+  display: flex;
+  gap: 53px;
+  justify-content: center;
+}
+
+.product {
+  text-align: center;
+  background-color: #e9dbc4;
+  padding: 40px 55px;
+}
+
+.suggestion {
+  text-align: center;
+  background-color: #e9dbc4;
+  padding: 40px 55px;
+}
+
+.product img {
+  width: 110px;
+  height: 255px;
+  max-width: 200px;
+}
+
+.suggestion img {
+  width: 110px;
+  height: 255px;
+  max-width: 200px;
+}
+
+.product-type {
+  font-style: italic;
+  color: black;
+  font-weight: 500;
+}
+
+.suggestion-type {
+  font-style: italic;
+  color: black;
+  font-weight: 500;
+  max-width: 165px;
+}
+
+.suggestion-type-prix {
+  color: black;
+  font-weight: 500;
+}
+
+.product-title {
+  font-weight: bold;
+}
+
+.suggestion-title {
+  font-weight: bold;
+}

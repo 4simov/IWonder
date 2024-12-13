@@ -1,0 +1,39 @@
+.footer {
+  background: #e9dbc4;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.footer-content h3 {
+  font-size: 20px;
+}
+
+.sous-titre {
+  text-align: center;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+  color: #817c7b;
+}
+
+.footer-logo img {
+  width: 150px;
+}
+
+.footer-reglementation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-reglementation img {
+  width: 40%;
+}

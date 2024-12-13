@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Spectral SC", serif;
+  color: #2b2824;
+  padding-top: 55px;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #c8693a;
+  color: white;
+  border: 1px solid #c8693a;
+  width: fit-content;
+}
+
+.btn-primary:hover {
+  background: #fff;
+  border-color: #c8693a;
+  color: #c8693a;
+  transition: all 0.3s ease;
+  border: 1px solid #c8693a;
+}
+
+a {
+  text-decoration: none !important;
+}

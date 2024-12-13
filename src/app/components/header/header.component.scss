@@ -1,0 +1,60 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: #faf1e2;
+  position: fixed;
+  width: -webkit-fill-available;
+  top: 0;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo img {
+  height: 90px;
+  display: flex;
+}
+
+.logo {
+  grid-column: 1 / 2;
+}
+
+.navigation {
+  display: flex;
+  grid-column: 2/3;
+  gap: 20px;
+}
+
+.navigation a:hover {
+  color: #c8693a;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-family: "Spectral SC", serif;
+  color: #4f1823;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 3 / 4;
+  gap: 10px;
+}
+
+.action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.action-button img {
+  width: 30px;
+}

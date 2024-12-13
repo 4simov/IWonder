@@ -1,0 +1,60 @@
+.container-connexion-creation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 53px;
+  margin: 50px 0;
+}
+
+.bandeau-titre {
+  background-color: #e9dbc4;
+  padding: 40px 80px;
+}
+
+.bandeau-titre h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #4f1823;
+}
+
+.connexion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.connexion a p {
+  margin: 0;
+}
+
+.creation {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.back {
+  width: 2px;
+  background-color: #4f1823;
+  border-radius: 50px;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background: transparent;
+}
+
+input:focus {
+  outline: none;
+}
