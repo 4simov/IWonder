@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: "Spectral SC", serif;
+  background-color: #faf4eb;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px;
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+#telephone {
+  width: 50%;
+}
+
+.mainProfil {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.form-section-profil {
+  width: 50%;
+}
+
+.profile-section {
+  text-align: center;
+  width: 40%;
+}
+
+.photo-de-profil {
+  width: 40%;
+  height: 40%;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.changer-photo {
+  background-color: #c8693a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 1.95px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.separator {
+  width: 2px;
+  height: 650px;
+  background-color: #4f1823;
+  margin: 0 30px;
+}
+
+.form-section {
+  flex: 1;
+}
+
+.heading {
+  font-size: 25px;
+  color: #2b2824;
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 17px;
+  color: #817c7b;
+  margin-bottom: 5px;
+}
+
+input {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid #817c7b;
+  background-color: transparent;
+  width: auto;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.sauvegarder {
+  background-color: #c8693a;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 1.95px;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-top: 20px;
+  height: 45px;
+  font-family: "Spectral SC", serif;
+}
