@@ -22,6 +22,8 @@
   height: 483px;
   grid-row: 1 / 4;
   grid-column: 2/3;
+  max-width: 300px;
+  max-height: 140 * 3 + 44px;
 }
 
 .photoPetite {
@@ -31,6 +33,7 @@
 
 .description {
   max-width: 600px;
+  padding: 10px;
 }
 
 .titreProduit {
@@ -49,6 +52,10 @@
   color: #4f1823;
   font-size: 18px;
   font-weight: 300;
+  max-width: 100%;
+  line-height: 2;
+  word-wrap: break-word;
+  text-align: justify;
 }
 
 .priceAndActions {

@@ -1,8 +1,22 @@
 .products {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 101px;
   padding: 80px;
+  text-align: center;
+}
+.product {
+  border-left: 1px solid #4f1823;
+  padding: 20px;
+}
+
+.product:first-child {
+  border-left: none;
+}
+
+.product img {
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .bandeau-titre {
@@ -15,4 +29,9 @@
   font-size: 30px;
   font-weight: 500;
   color: #4f1823;
+}
+.back {
+  width: 2px;
+  background-color: #4f1823;
+  border-radius: 50px;
 }

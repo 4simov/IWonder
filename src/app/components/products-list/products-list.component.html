@@ -4,10 +4,18 @@
 <div id="products-container" class="products">
   @for (article of articles; track article.id) {
   <div class="product">
-    <img [src]="'data:image/jpeg;base64,'+article.image" [alt]="article.nom">
-    <p class="product-type">{{article.nom}}</p>
-    <p class="product-price">{{article.prix_unitaire}} €</p>
-    <a routerLink="/article-details" class="btn-primary">Voir plus</a>
+    <img
+      [src]="'data:image/jpeg;base64,' + article.image"
+      [alt]="article.nom"
+    />
+    <p class="product-type">{{ article.nom }}</p>
+    <p class="product-price">Prix uniataire: {{ article.prix_unitaire }} €</p>
+    <p>{{ article.id }}</p>
+
+    <a [routerLink]="['/article-details', article.id]" class="btn-primary"
+      >Voir plus</a
+    >
   </div>
+
   }
 </div>

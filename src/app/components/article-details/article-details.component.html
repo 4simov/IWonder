@@ -1,19 +1,37 @@
-@for (article of articlesDetails; track article.id) {
+@if (article) {
 <div class="ficheProduit">
   <div class="groupe-photo">
-    <img class="photoMain" [src]="'data:image/jpeg;base64,'+article.image" [alt]="article.nom" />
-    <img class="photoPetite" [src]="'data:image/jpeg;base64,'+article.image" [alt]="article.nom" />
-    <img class="photoPetite" [src]="'data:image/jpeg;base64,'+article.image" [alt]="article.nom" />
-    <img class="photoPetite" [src]="'data:image/jpeg;base64,'+article.image" [alt]="article.nom" />
+    <img
+      class="photoMain"
+      [src]="'data:image/jpeg;base64,' + article.image"
+      [alt]="article.nom"
+    />
+    <img
+      class="photoPetite"
+      [src]="'data:image/jpeg;base64,' + article.image"
+      [alt]="article.nom"
+    />
+    <img
+      class="photoPetite"
+      [src]="'data:image/jpeg;base64,' + article.image"
+      [alt]="article.nom"
+    />
+    <img
+      class="photoPetite"
+      [src]="'data:image/jpeg;base64,' + article.image"
+      [alt]="article.nom"
+    />
   </div>
   <div class="description">
-    <h2 class="titreProduit">{{article.nom}}</h2>
-    <p class="descriptionProduit">{{article.description}}</p>
-    <p class="prix">{{article.prix_unitaire}}</p>
+    <h2 class="titreProduit">{{ article.nom }}</h2>
+    <p class="descriptionProduit">{{ article.description }}</p>
+    <a class="prix">{{ article.prix_unitaire }} €</a>
     <div class="priceAndActions">
-      <p class="quantite">Quantité: <span>1</span></p>
+      <p class="quantite">Quantité: {{ article.quantite }}</p>
       <a class="addToCart" routerLink="/ajoutpanier">Ajouter au panier</a>
     </div>
   </div>
 </div>
+} @else {
+<p>L'article n'existe pas...</p>
 }

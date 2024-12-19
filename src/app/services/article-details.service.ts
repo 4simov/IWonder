@@ -6,6 +6,9 @@ import { ArticleDetails } from '../models/article-details';
   providedIn: 'root',
 })
 export class ArticleDetailsService {
+  getArticleById(id: string) {
+    throw new Error('Method not implemented.');
+  }
   constructor(private readonly httpClient: HttpClient) {}
   getArticlesDetails() {
     return this.httpClient.get<ArticleDetails[]>(
