@@ -1,14 +1,17 @@
 <!-- Partie Famille de vin -->
 <section class="hero">
-  <img src="/negosud.png" alt="Hero Image">
+  <img src="/negosud.png" alt="Hero Image" />
 </section>
 <section class="featured-products">
   <h2>Nos différentes familles de vin</h2>
   <div id="suggestions-container" class="suggestions">
     @for (famille of familles; track famille.id) {
     <div class="suggestion">
-      <img [src]="'data:image/jpeg;base64,'+famille.photo" [alt]="famille.nom">
-      <p class="suggestion-type">{{famille.nom}}</p>
+      <img
+        [src]="'data:image/jpeg;base64,' + famille.photo"
+        [alt]="famille.nom"
+      />
+      <p class="suggestion-type">{{ famille.nom }}</p>
     </div>
     }
   </div>
@@ -19,5 +22,15 @@
   <h2>Nos suggestions du mois</h2>
   <div id="suggestions-container" class="suggestions">
     <!-- Les suggestions dynamiques seront insérées ici -->
+    @for (article of articles; track article.id) {
+    <div class="suggestion">
+      <img
+        [src]="'data:image/jpeg;base64,' + article.image"
+        [alt]="article.nom"
+        [routerLink]="['/article-details', article.id]"
+      />
+      <p class="suggestion-type">{{ article.nom }}</p>
+    </div>
+    }
   </div>
 </section>

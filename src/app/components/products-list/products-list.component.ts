@@ -10,6 +10,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './products-list.component.scss',
 })
 export class ProductsListComponent implements OnInit {
+  familles: any;
   articles: Article[] = [];
   constructor(private readonly articleService: ArticleService) {}
   ngOnInit(): void {
